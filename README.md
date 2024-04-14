@@ -7,7 +7,7 @@ You can setup a conda environment with dependencies installed by
 . setup.sh
 ```
 
-Then, you can run jupyter lab:
+Then, you can run jupyter lab from within this project directory:
 ```
 jupyter lab
 ```
