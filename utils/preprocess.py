@@ -2,7 +2,6 @@
 
 import torch.utils.data
 from collections import Counter
-from sklearn.model_selection import train_test_split
 
 class TextDataset(torch.utils.data.Dataset):
   def __init__(self, lines, encode):
