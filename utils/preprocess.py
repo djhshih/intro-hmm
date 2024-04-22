@@ -3,8 +3,16 @@
 import torch.utils.data
 from collections import Counter
 
+def encode(xs):
+    character_set = string.ascii_lowercase
+    return [character_set.index(x) for x in xs]
+
+def decode(ys, character_set=string.ascii_lowercase):
+    character_set = string.ascii_lowercase
+    return [character_set[y] for y in ys]
+
 class TextDataset(torch.utils.data.Dataset):
-  def __init__(self, lines, encode):
+  def __init__(self, lines):
     """
     lines: list of strings
     encode: encoding function
